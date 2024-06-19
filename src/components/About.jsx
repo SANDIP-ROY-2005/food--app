@@ -20,7 +20,7 @@ const About = () => {
           Food Is An Important Part Of A Balanced Diet
         </h1>
         <p className="primary-text">
-        At FOODIE, we believe that food plays a crucial role in a healthy lifestyle. 
+          we believe that food plays a crucial role in a healthy lifestyle. 
         </p>
         <p className="primary-text">
         That's why we're committed to offering you delicious meals crafted with quality ingredients, ensuring your dining experience is not only enjoyable but also nourishing.
