@@ -48,6 +48,17 @@ function Testimonial() {
             </div>
             <h2>lorem ipsom</h2>
         </div>
+        <div className='testimonial-section-bottom'>
+            <img src={ProfilePic} alt=''></img>
+            <div className='testimonial-starts-container'>
+                <AiFillStar/>
+                <AiFillStar/>
+                <AiFillStar/>
+                <AiFillStar/>
+                <AiFillStar/>
+            </div>
+            <h2>lorem ipsom</h2>
+        </div>
     </div>
     <Footer/>
     </>

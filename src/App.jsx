@@ -9,11 +9,18 @@ import  Work from './components/Work'
 import Testimonial from './components/Testimonial'
 import Footer from './components/Footer'
 import Contact from './components/Contact'
- 
+// import { Menu } from '@mui/material'
+import Menu from './components/Menu'
+
+//  import { useNavigate } from 'react-router-dom'
  
  
 
 function App() {
+  // const navigate = useNavigate();
+  // const handleClick = ()=>{
+  //   navigate("./components/Reservation");
+  // }
   const router = createBrowserRouter([
     {
       
@@ -34,6 +41,11 @@ function App() {
       
       path: "/contact",
       element:  <> <Navbar/>  <Contact/>  </>
+    },
+    {
+      
+      path: "/menu",
+      element:  <> <Navbar/>  <Menu/>  </>
     }
 
 

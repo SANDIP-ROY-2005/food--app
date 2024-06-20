@@ -17,8 +17,14 @@ import CommentRoundedIcon from "@mui/icons-material/CommentRounded";
 import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
 import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded";
 import Footer from "./Footer";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+
+  const navigate = useNavigate();
+  const handleClick = ()=>{
+    navigate('./Reservation');
+  }
   const [openMenu, setOpenMenu] = useState(false);
   const menuOptions = [
     {
@@ -53,13 +59,15 @@ const Navbar = () => {
       <NavLink  className={(e)=>{return e.isActive?"red":""}}to= "/" ><p>HOME</p></NavLink>
         <NavLink  className={(e)=>{return e.isActive?"red":""}}to= "/about" ><p>ABOUT US</p></NavLink>
         <NavLink  className={(e)=>{return e.isActive?"red":""}}to= "/testimonial" ><p>Testimonial</p></NavLink>
+        <NavLink  className={(e)=>{return e.isActive?"red":""}}to= "/menu" ><p>Menu</p></NavLink>
         <NavLink  className={(e)=>{return e.isActive?"red":""}}to= "/contact" ><p>CONTACT</p></NavLink>
         
         <a href="">
         
           <BsCart2 className="navbar-cart-icon" />
         </a> 
-        <button className="primary-button">Bookings Now</button>
+        {/* <button  onClick={handleClick}className="primary-button">Bookings Now</button> */}
+        <button   className="primary-button">Bookings Now</button>
       </div>
       <div className="navbar-menu-container">
         <HiOutlineBars3 onClick={() => setOpenMenu(true)} />

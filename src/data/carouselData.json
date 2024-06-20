@@ -1,0 +1,17 @@
+{
+    "slides": [
+      {
+         
+        "src": "https://img.freepik.com/premium-vector/vector-food-menu-restaurant-social-media-banner-template_604204-138.jpg?size=626&ext=jpg&ga=GA1.1.2038123689.1709035290&semt=ais_user",
+        "alt": "Image 1 for carousel"
+      },
+      {
+        "src": "https://media.istockphoto.com/id/642827392/photo/snacks-for-watching-a-football-game.jpg?s=612x612&w=0&k=20&c=Pikqf1h9QwPGq4OSEI8Mt1EMLPnWV8v1BKU1BoPslk0=",
+        "alt": "Image 2 for carousel"
+      },
+      {
+        "src": "https://media.istockphoto.com/id/1075099420/photo/homemade-pulled-pork-sliders.jpg?s=612x612&w=0&k=20&c=THqwsD3fg0uvjeyVuY9aGjZfcBZsPmb_5nBpSJvjSpQ=",
+        "alt": "Image 3 for carousel"
+      }
+    ]
+  }
