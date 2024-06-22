@@ -9,9 +9,9 @@ const Footer = () => {
   return (
     <div className="footer-wrapper">
       <div className="footer-section-one">
-        <div className="footer-logo-container">
-          <img src={Logo} alt="" />
-        </div>
+        {/* <div className="footer-logo-container">
+          <img src="https://img.freepik.com/free-vector/restaurant-tasty-food-logo-design_460848-10307.jpg" alt="" />
+        </div> */}
         <div className="footer-icons">
           <BsTwitter />
           <SiLinkedin />

@@ -2,6 +2,7 @@ import React from 'react'
 import PickMeals from "../Assets/pick-meals-image.png";
 import ChooseMeals from "../Assets/choose-image.png";
 import DeliveryMeals from "../Assets/delivery-image.png";
+import Footer from './Footer';
 
 function Work() {
     const workInfoData = [
@@ -22,10 +23,11 @@ function Work() {
         },
       ];
   return (
+    <>
     <div className='work-section-wrapper'>
         <div className='work-section-top'>
-            <p className='primary-subheading'>Work</p>
-            <h1 className='primary-heading'>How It Work</h1>
+            <p className='primary-subheading'> </p>
+            <h1 className='primary-heading'>How It Works</h1>
             <p className='primary-text'>
             we understand the importance of good service. Our friendly staff is here to ensure you have a pleasant dining experience from start to finish.
             </p>
@@ -42,6 +44,8 @@ function Work() {
             ))}
         </div>
     </div>
+    <Footer/>
+    </>
   )
 }
 

@@ -1,5 +1,5 @@
 import { useState } from 'react'
- 
+ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
 import Home from './components/Home'
 import {createBrowserRouter , RouterProvider } from 'react-router-dom'
@@ -9,8 +9,10 @@ import  Work from './components/Work'
 import Testimonial from './components/Testimonial'
 import Footer from './components/Footer'
 import Contact from './components/Contact'
-// import { Menu } from '@mui/material'
+import Reservation from './components/Reservation'
+ 
 import Menu from './components/Menu'
+ 
 
 //  import { useNavigate } from 'react-router-dom'
  
@@ -39,6 +41,11 @@ function App() {
     },
     {
       
+      path: "/work",
+      element:  <> <Navbar/>  <Work/>  </>
+    },
+    {
+      
       path: "/contact",
       element:  <> <Navbar/>  <Contact/>  </>
     },
@@ -46,7 +53,13 @@ function App() {
       
       path: "/menu",
       element:  <> <Navbar/>  <Menu/>  </>
+    },
+    {
+      
+      path: "/reservation",
+      element:  <> <Navbar/>  <Reservation/>  </>
     }
+     
 
 
   ])

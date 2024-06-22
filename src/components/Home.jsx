@@ -4,15 +4,25 @@ import BannerBackground from "../Assets/home-banner-background.png";
 import BannerImage from "../Assets/home-banner-image.png";
 import { FiArrowRight } from "react-icons/fi";
 import Footer from "./Footer"
-import Carousel from './Carousel';
-import {slides} from "../data/carouselData.json"
+ 
+ 
+import Display from './Display';
+import About from './About';
+import CarouselPage from './CarouselPage';
+import { useNavigate } from "react-router-dom";
 
 function Home() {
+    const navigate = useNavigate();
+    const handleButtonClick =()=>{
+        navigate('/Display');
+    }
   return (
     <>
     <div className='home-container'>
         <Navbar/>
-        <Carousel data={slides}/>
+        {/* <Carousel data={slides}/> */}
+        <CarouselPage/>
+         
         <div className='home-banner-container'>
             <div className='home-bannerImage-container'>
                 <img src={BannerBackground} alt=""/>
@@ -24,7 +34,7 @@ function Home() {
                 <p className='primary-text'>
                 Dive into our yummy meals, made just for you and brought to your door, so you can enjoy every bite without waiting!
                 </p>
-                <button className='secondary-button'>
+                <button  onClick={handleButtonClick}className='secondary-button'>
                     Order Now <FiArrowRight/>{""}
                 </button>
             </div>
@@ -33,6 +43,9 @@ function Home() {
             </div>
         </div>
     </div>
+    <Display/>
+    <About/>
+    
     <Footer/>
     </>
   )

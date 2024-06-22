@@ -21,10 +21,10 @@ import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
 
-  const navigate = useNavigate();
-  const handleClick = ()=>{
-    navigate('./Reservation');
-  }
+  // const navigate = useNavigate();
+  // const handleClick = ()=>{
+  //   navigate('./Reservation');
+  // }
   const [openMenu, setOpenMenu] = useState(false);
   const menuOptions = [
     {
@@ -52,22 +52,28 @@ const Navbar = () => {
     <>
     <nav>
       <div className="nav-logo-container">
-        <img src={Logo} alt="" />
+        <img src="https://img.freepik.com/free-vector/restaurant-tasty-food-logo-design_460848-10307.jpg" alt="" />
       </div>
       <div className="navbar-links-container">
 
       <NavLink  className={(e)=>{return e.isActive?"red":""}}to= "/" ><p>HOME</p></NavLink>
-        <NavLink  className={(e)=>{return e.isActive?"red":""}}to= "/about" ><p>ABOUT US</p></NavLink>
-        <NavLink  className={(e)=>{return e.isActive?"red":""}}to= "/testimonial" ><p>Testimonial</p></NavLink>
+        {/* <NavLink  className={(e)=>{return e.isActive?"red":""}}to= "/about" ><p>ABOUT US</p></NavLink> */}
+       
         <NavLink  className={(e)=>{return e.isActive?"red":""}}to= "/menu" ><p>Menu</p></NavLink>
-        <NavLink  className={(e)=>{return e.isActive?"red":""}}to= "/contact" ><p>CONTACT</p></NavLink>
+        <NavLink  className={(e)=>{return e.isActive?"red":""}}to= "/work" ><p>WORK</p></NavLink>
+        {/* <NavLink  className={(e)=>{return e.isActive?"red":""}}to= "/testimonial" ><p>Testimonial</p></NavLink> */}
+        
         
         <a href="">
         
           <BsCart2 className="navbar-cart-icon" />
         </a> 
+        <NavLink  className={(e)=>{return e.isActive?"red":""}}to= "/reservation" ><p>BOOKINGS</p></NavLink>
         {/* <button  onClick={handleClick}className="primary-button">Bookings Now</button> */}
-        <button   className="primary-button">Bookings Now</button>
+        {/* <button   className="primary-button">Bookings Now</button> */}
+        <NavLink  className={(e)=>{return e.isActive?"red":""}}to= "/contact" ><p>CONTACT</p></NavLink>
+        <NavLink  className={(e)=>{return e.isActive?"red":""}}to= "/testimonial" ><p>Testimonial</p></NavLink>
+        
       </div>
       <div className="navbar-menu-container">
         <HiOutlineBars3 onClick={() => setOpenMenu(true)} />

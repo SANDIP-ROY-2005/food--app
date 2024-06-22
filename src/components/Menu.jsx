@@ -1,9 +1,23 @@
 import React from 'react'
+import {createBrowserRouter , RouterProvider } from 'react-router-dom'
+import Monday from './Monday'
+import Footer from './Footer'
 
 const Menu = () => {
+   // const routertwo = createBrowserRouter([
+   //    {
+      
+   //       path: "/monday",
+   //       element:  <>   <Monday/>  </>
+   //     }
+      
+       
+   // ])
   return (
     <> 
-  <div className='movies-container favorites'> 
+     {/* <RouterProvider router={routertwo}/> */}
+
+  {/* <div className='movies-container favorites'> 
     <h1>MENU</h1>
     <div className="movie-gird"> 
   
@@ -116,7 +130,62 @@ const Menu = () => {
      
    </div>
    </div>
-   </div>
+   </div> */}
+   <div className='work-section-bottom'>
+ 
+    <div className='work-section-info'>
+        <div className='info-boxes-img-container'>
+        <img src="https://images.pexels.com/photos/2097090/pexels-photo-2097090.jpeg?auto=compress&cs=tinysrgb&w=600"alt="" />
+        </div>
+        <h2>dish</h2>
+        <p>Lorem, ipsum dolor.</p>
+    </div>
+    <div className='work-section-info'>
+        <div className='info-boxes-img-container'>
+        <img src="https://images.pexels.com/photos/2097090/pexels-photo-2097090.jpeg?auto=compress&cs=tinysrgb&w=600"alt="" />
+        </div>
+        <h2>dish</h2>
+        <p>Lorem, ipsum dolor.</p>
+    </div>
+    <div className='work-section-info'>
+        <div className='info-boxes-img-container'>
+        <img src="https://images.pexels.com/photos/2097090/pexels-photo-2097090.jpeg?auto=compress&cs=tinysrgb&w=600"alt="" />
+        </div>
+        <h2>dish</h2>
+        <p>Lorem, ipsum dolor.</p>
+    </div>
+    <div className='work-section-info'>
+        <div className='info-boxes-img-container'>
+        <img src="https://images.pexels.com/photos/2097090/pexels-photo-2097090.jpeg?auto=compress&cs=tinysrgb&w=600"alt="" />
+        </div>
+        <h2>dish</h2>
+        <p>Lorem, ipsum dolor.</p>
+    </div>
+    <div className='work-section-info'>
+        <div className='info-boxes-img-container'>
+        <img src="https://images.pexels.com/photos/2097090/pexels-photo-2097090.jpeg?auto=compress&cs=tinysrgb&w=600"alt="" />
+        </div>
+        <h2>dish</h2>
+        <p>Lorem, ipsum dolor.</p>
+    </div>
+    <div className='work-section-info'>
+        <div className='info-boxes-img-container'>
+        <img src="https://images.pexels.com/photos/2097090/pexels-photo-2097090.jpeg?auto=compress&cs=tinysrgb&w=600"alt="" />
+        </div>
+        <h2>dish</h2>
+        <p>Lorem, ipsum dolor.</p>
+    </div>
+    <div className='work-section-info'>
+        <div className='info-boxes-img-container'>
+        <img src="https://images.pexels.com/photos/2097090/pexels-photo-2097090.jpeg?auto=compress&cs=tinysrgb&w=600"alt="" />
+        </div>
+        <h2>dish</h2>
+        <p>Lorem, ipsum dolor.</p>
+    </div>
+    
+ 
+</div>
+<Footer/>
     
 
 
