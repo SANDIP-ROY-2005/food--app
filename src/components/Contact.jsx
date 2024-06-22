@@ -12,7 +12,7 @@ function Contact() {
             <button className='secondary-button'>Submit</button>
         </div>
     </div>
-    <Footer/>
+    {/* <Footer/> */}
     </>
   )
 }

@@ -28,7 +28,7 @@
     align-items: center;
     justify-content: space-between;
     /* min-height: 90px; */
-    background-color: #333;
+    /* background-color: #333; */
     height: 90px;
     width: 100%;
   }
@@ -47,7 +47,7 @@
     margin-right: 3rem;
     text-decoration: none;
     font-family:cursive;
-    color: wheat;
+    color: black;
     font-size: 1.1rem;
     font-weight: 600;
     display: flex;
@@ -253,9 +253,9 @@
     cursor: pointer;
   } */
   .footer-wrapper {
-    background-color: #333;
+    /* background-color: #333; */
     /* background-color: #FEECE2; */
-    color: #fff;
+     color: black;
     margin-top: 250px;
     width: 100%;
      

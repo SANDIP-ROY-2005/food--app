@@ -12,12 +12,12 @@ const Footer = () => {
         {/* <div className="footer-logo-container">
           <img src="https://img.freepik.com/free-vector/restaurant-tasty-food-logo-design_460848-10307.jpg" alt="" />
         </div> */}
-        <div className="footer-icons">
+        {/* <div className="footer-icons">
           <BsTwitter />
           <SiLinkedin />
           <BsYoutube />
           <FaFacebookF />
-        </div>
+        </div> */}
       </div>
       <div className="footer-section-two">
         <div className="footer-section-columns">
@@ -37,6 +37,12 @@ const Footer = () => {
         <div className="footer-section-columns">
           <span>Terms & Conditions</span>
           <span>Privacy Policy</span>
+        </div>
+        <div className="footer-icons">
+          <BsTwitter />
+          <SiLinkedin />
+          <BsYoutube />
+          <FaFacebookF />
         </div>
       </div>
     </div>

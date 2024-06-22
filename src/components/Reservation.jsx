@@ -54,7 +54,7 @@ const Reservation = () => {
         </form>
       )}
     </section>
-    <Footer/>
+    {/* <Footer/> */}
     </>
   );
 };
