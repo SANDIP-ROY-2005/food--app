@@ -30,6 +30,7 @@
     /* min-height: 90px; */
     background-color: #333;
     height: 90px;
+    width: 100%;
   }
   .navbar-menu-container {
     display: none;
@@ -256,6 +257,7 @@
     /* background-color: #FEECE2; */
     color: #fff;
     margin-top: 250px;
+    width: 100%;
      
     
     padding: 20px 0;
