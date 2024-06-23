@@ -1,6 +1,14 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
+import { FiArrowRight } from "react-icons/fi";
 
 const Display = () => {
+  const navigateTo = useNavigate()
+  const handlePreviewClick = ()=>{
+    navigateTo('/preview')
+  }
+
+
   return (
 //     <div className='movies-container favorites'> 
 //     <h1> TOP DISHES!</h1>
@@ -91,13 +99,16 @@ const Display = () => {
 //    </div>
 
 <div className='work-section-bottom'>
-<h1> TOP DISHES!</h1>
+<h1> BEST DISHES!</h1>
     <div className='work-section-info'>
         <div className='info-boxes-img-container'>
         <img src="https://images.pexels.com/photos/699953/pexels-photo-699953.jpeg?auto=compress&cs=tinysrgb&w=600"alt="" />
         </div>
         <h2>dish</h2>
         <p>Lorem ipsum dolor sit amet.</p>
+        <button onClick={handlePreviewClick } className='order-button'>PREVIEW  <FiArrowRight/>{""}
+
+        </button>
     </div>
     <div className='work-section-info'>
         <div className='info-boxes-img-container'>
@@ -105,6 +116,9 @@ const Display = () => {
         </div>
         <h2>dish</h2>
         <p>Lorem ipsum dolor sit amet.</p>
+        <button onClick={handlePreviewClick } className='order-button'>PREVIEW  <FiArrowRight/>{""}
+
+        </button>
     </div>
     <div className='work-section-info'>
         <div className='info-boxes-img-container'>
@@ -112,6 +126,9 @@ const Display = () => {
         </div>
         <h2>dish</h2>
         <p>Lorem ipsum dolor sit amet.</p>
+        <button onClick={handlePreviewClick } className='order-button'>PREVIEW  <FiArrowRight/>{""} 
+
+        </button>
     </div>
  
 </div>

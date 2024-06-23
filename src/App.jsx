@@ -10,8 +10,11 @@ import Testimonial from './components/Testimonial'
 import Footer from './components/Footer'
 import Contact from './components/Contact'
 import Reservation from './components/Reservation'
+import { BrowserRouter as Router , Route, Routes } from 'react-router-dom';
  
 import Menu from './components/Menu'
+import  Preview  from'./components/Preview'
+import Order from './components/Order';
  
 
 //  import { useNavigate } from 'react-router-dom'
@@ -23,60 +26,70 @@ function App() {
   // const handleClick = ()=>{
   //   navigate("./components/Reservation");
   // }
-  const router = createBrowserRouter([
-    {
+  // const router = createBrowserRouter([
+  //   {
       
-      path: "/",
-      element:  <>   <Home/>  </>
-    },
-    {
+  //     path: "/",
+  //     element:  <>   <Home/>  </>
+  //   },
+  //   {
       
-      path: "/about",
-      element:  <> <Navbar/>  <About/>  </>
-    },
-    {
+  //     path: "/about",
+  //     element:  <> <Navbar/>  <About/>  </>
+  //   },
+  //   {
       
-      path: "/testimonial",
-      element:  <> <Navbar/>  <Testimonial/>  </>
-    },
-    {
+  //     path: "/testimonial",
+  //     element:  <> <Navbar/>  <Testimonial/>  </>
+  //   },
+  //   {
       
-      path: "/work",
-      element:  <> <Navbar/>  <Work/>  </>
-    },
-    {
+  //     path: "/work",
+  //     element:  <> <Navbar/>  <Work/>  </>
+  //   },
+  //   {
       
-      path: "/contact",
-      element:  <> <Navbar/>  <Contact/>  </>
-    },
-    {
+  //     path: "/contact",
+  //     element:  <> <Navbar/>  <Contact/>  </>
+  //   },
+  //   {
       
-      path: "/menu",
-      element:  <> <Navbar/>  <Menu/>  </>
-    },
-    {
+  //     path: "/menu",
+  //     element:  <> <Navbar/>  <Menu/>  </>
+  //   },
+  //   {
       
-      path: "/reservation",
-      element:  <> <Navbar/>  <Reservation/>  </>
-    }
+  //     path: "/reservation",
+  //     element:  <> <Navbar/>  <Reservation/>  </>
+  //   }
      
 
 
-  ])
+  // ])
    
   
 
   return (
     <>
-     <RouterProvider router={router}/>
+     {/* <RouterProvider router={router}/> */}
+     <Router>
+      <Navbar/>
+      <main>
+        <Routes>
+          <Route path='/' element= {<Home/>}/>
+          <Route path='/about' element= {<About/>}/>
+          <Route path='/work' element= {<Work/>}/>
+          <Route path='/menu' element= {<Menu/>}/>
+          <Route path='/contact' element= {<Contact/>}/>
+          <Route path='/testimonial' element= {<Testimonial/>}/>
+          <Route path='/reservation' element= {<Reservation/>}/>
+          <Route path='/preview' element= {<Preview/>}/>
+          <Route path='/order' element= {<Order/>}/>
+        </Routes>
+      </main>
+     </Router>
 
-       {/* <Home/>
-       <About/>
-       <Work/>
-       <Testimonial/>
        
-       <Contact/>
-       <Footer/> */}
     </>
   )
 }

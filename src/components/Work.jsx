@@ -2,6 +2,8 @@ import React from 'react'
 import PickMeals from "../Assets/pick-meals-image.png";
 import ChooseMeals from "../Assets/choose-image.png";
 import DeliveryMeals from "../Assets/delivery-image.png";
+import BannerBackground from "../Assets/home-banner-background.png";
+import AboutBackground from "../Assets/about-background.png";
 import Footer from './Footer';
 
 function Work() {
@@ -25,6 +27,9 @@ function Work() {
   return (
     <>
     <div className='work-section-wrapper'>
+    <div className='home-bannerImage-container'>
+                <img src={BannerBackground} alt=""/>
+            </div>
         <div className='work-section-top'>
             <p className='primary-subheading'> </p>
             <h1 className='primary-heading'>How It Works</h1>
@@ -32,6 +37,9 @@ function Work() {
             we understand the importance of good service. Our friendly staff is here to ensure you have a pleasant dining experience from start to finish.
             </p>
         </div>
+        <div className="about-background-image-container">
+        <img src={AboutBackground} alt="" />
+      </div>
         <div className='work-section-bottom'>
             {workInfoData.map((data)=>(
                 <div className='work-section-info' key={data.title}>

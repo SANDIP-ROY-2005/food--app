@@ -2,12 +2,17 @@ import React from 'react'
 import ProfilePic from "../Assets/john-doe-image.png";
 import { AiFillStar } from "react-icons/ai";
 import Footer from "./Footer"
+import BannerBackground from "../Assets/home-banner-background.png";
+import AboutBackground from "../Assets/about-background.png";
 
 
 function Testimonial() {
   return (
     <>
     <div className='work-section-wrapper'>
+    <div className='home-bannerImage-container'>
+                <img src={BannerBackground} alt=""/>
+            </div>
         <div className='work-section-top'>
             <p className='primary-subheading'> </p>
             <h1 className='primary-heading'>What They Are Saying</h1>

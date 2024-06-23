@@ -14,14 +14,21 @@ import { useNavigate } from "react-router-dom";
 function Home() {
     const navigate = useNavigate();
     const handleButtonClick =()=>{
-        navigate('/Display');
+        navigate('/menu');
     }
   return (
     <>
     <div className='home-container'>
-        <Navbar/>
+        {/* <Navbar/> */}
         {/* <Carousel data={slides}/> */}
         <CarouselPage/>
+        <div className="hero-section">
+            <div className="about-us"> 
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, architecto.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus aspernatur similique itaque animi labore harum molestiae nesciunt excepturi sunt assumenda repellat nam sapiente, recusandae eveniet eligendi dignissimos id qui, laboriosam quod eaque voluptates cum nisi veniam. Assumenda labore quaerat aliquid!
+            </div>
+            
+        </div>
          
         <div className='home-banner-container'>
             <div className='home-bannerImage-container'>

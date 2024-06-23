@@ -4,6 +4,54 @@
     box-sizing: border-box;
     font-family: "Reem Kufi", sans-serif !important;
   }
+  .prev-section-info{
+    display: flex;
+    border: 2px solid rgb(240, 197, 197);
+    padding: 20px 50px;
+    border-radius: 8px;
+    gap: 50px;
+    width: 100%;
+  }
+  .prev-info{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+  }
+  .prev-info-boxes-img-container{
+    /* height:200px; */
+    /* width:150px; */
+    object-fit: cover;
+
+  }
+  .hero-section{
+    background-color: #212121;
+    color:white;
+    display: flex;
+    flex-direction: column;
+  }
+  .btn{
+    display: flex;
+    flex-wrap: wrap;
+    gap:2px;
+  }
+  .exploreBtn{
+    padding: 1rem 2.5rem;
+    
+    background-color: #4e0317;
+    outline: none;
+    border: none;
+    border-radius: 5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 600;
+    color: white;
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
   img {
     max-width: 100%;
     height: auto;
@@ -56,7 +104,8 @@
     display: flex;
   }
   .primary-button {
-    padding: 0.9rem 1.75rem;
+    padding: 0px 1.75rem;
+ 
     background-color: white;
     outline: none;
     border: none;
@@ -112,6 +161,21 @@
     max-width: 500px;
     color: #878787;
     margin: 1.5rem 0rem;
+  }
+  .order-button{
+    padding: 1rem 2.5rem;
+    background-color: #4e0317;
+    outline: none;
+    border: none;
+    border-radius: 5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 600;
+    color: white;
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .secondary-button {
     padding: 1rem 2.5rem;
